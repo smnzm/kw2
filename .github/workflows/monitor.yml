@@ -1,0 +1,33 @@
+name: Run Python Script
+
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Script
+      run: python monitor.py
+
+    - name: Debug File Location
+      run: ls -R
+
+    - name: Upload Exported File
+      uses: actions/upload-artifact@v3
+      with:
+        name: exported-file
+        path: keyword_ranks.csv # Update this to the correct file path
