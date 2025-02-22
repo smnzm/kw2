@@ -6,7 +6,7 @@ import schedule
 import os
 
 # Replace with your own API key
-api_key = "534c298aed22ae97a4a6a76e28d4b537a4fe6049012345"
+api_key = "534c298aed22ae97a4a6a76e28d4b537a4fe6049"
 
 # Function to read keywords from Excel file
 def read_keywords_from_excel(filename):
