@@ -27,7 +27,7 @@ jobs:
       run: ls -R
 
     - name: Upload Exported File
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: exported-file
         path: keyword_ranks.csv # Update this to the correct file path
