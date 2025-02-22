@@ -17,7 +17,7 @@ def read_keywords_from_excel(filename):
 
 
 # List of websites to monitor
-websites = ["bama.ir"]
+websites = ["https://www.hamrah-mechanic.com/"]
 
 # Function to get the rank of a website for a keyword
 def get_rank(keyword, website, api_key):
