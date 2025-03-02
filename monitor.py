@@ -23,6 +23,7 @@ def get_ranks(keyword, website, api_key):
         "q": keyword,
         "gl": "ir",  # Iran
         "hl": "fa",  # Farsi language
+        "num": 20
     }
 
     response = requests.get("https://google.serper.dev/search", headers=headers, params=params)
