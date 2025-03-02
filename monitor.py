@@ -73,7 +73,7 @@ def save_to_excel(data, filename):
 def job():
     keywords = read_keywords_from_excel("keywords.xlsx")
     data = monitor_keywords(keywords, websites, api_key)
-    save_to_excel(data, "keyword_ranks.xlsx")
+    save_to_excel(data, "keyword_ranks.csv")
 
 # Run the script immediately
 job()
