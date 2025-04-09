@@ -62,7 +62,7 @@ def monitor_keywords(keywords, websites, api_key):
                 "rank_2": rank_2,
                 "timestamp": datetime.now()
             })
-            time.sleep(1)  # Reduce API usage rate
+            time.sleep(0.5)  # Reduce API usage rate
     return data
 
 # Save data to Excel file
