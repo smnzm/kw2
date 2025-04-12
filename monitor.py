@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 # Replace with your own API key
-api_key = "534c298aed22ae97a4a6a76e28d4b537a4fe6049"
+api_key = "530def274e8277291bba9868d7f7a445c8be7230"
 
 # Function to read keywords from Excel file
 def read_keywords_from_excel(filename):
