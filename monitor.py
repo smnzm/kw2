@@ -14,7 +14,7 @@ def read_keywords_from_excel(filename):
     return keywords
 
 # List of websites to monitor
-websites = ["https://bama.ir/,https://karnameh.com/"]
+websites = ["https://karnameh.com/"]
 
 # Function to get both ranks from a single API request
 def get_ranks(keyword, website, api_key):
