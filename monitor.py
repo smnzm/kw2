@@ -14,7 +14,7 @@ def read_keywords_from_excel(filename):
     return keywords
 
 # List of websites to monitor
-websites = ["https://www.sheypoor.com/"]
+websites = ["https://oto.ir/"]
 
 # Function to get both ranks from a single API request
 def get_ranks(keyword, website, api_key):
@@ -23,7 +23,7 @@ def get_ranks(keyword, website, api_key):
         "q": keyword,
         "gl": "ir",  # Iran
         "hl": "fa",  # Farsi language
-        "num": 20
+        "num": 10
     }
 
     response = requests.get("https://google.serper.dev/search", headers=headers, params=params)
